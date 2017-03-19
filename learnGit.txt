@@ -1,0 +1,43 @@
+/**A GitHub learn txt
+
+*Author: JiaHuayu
+
+*/
+
+*1、创建版本库
+
+//（1）选择一个目录learnGit，pwd *显示当前目录
+
+//（2） git init *将当前目录变成Git可以管理的仓库
+
+*2、添加文件到本地仓库
+
+//(1) 在learnGit目录下创建一个文件readme.txt
+
+//(2) git add readme.txt *添加文件到寄存区
+
+//(3) git commit -m “message description” *将寄存区的文件改动提交到本地仓库
+
+*3、 git status *查看仓库状态
+
+*4、 git diff readme.txt *查看redme.txt 当前副本与历史版本的文件改变
+
+*5、 git log *日志查看
+
+*6、 git log --pretty=online *信息少的日志查看
+
+*7、 git reset --hard HEAD^ *版本回退一次
+
+*8、 git reset --hard 3628164 *版本回退到3628164对应的版本
+
+*9、 git reflog *记录你的每一次命令
+
+*10、 git checkout -- readme.txt *丢弃工作区的修改，恢复到最后一次在暂存区的状态
+
+*11、 git reset HEAD readme.txt *丢弃暂存区的修改，恢复到本地仓库的状态
+
+*场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。
+
+*场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。
+
+*场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库
