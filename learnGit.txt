@@ -81,4 +81,25 @@
     feature分支是否推到远程，取决于你是否和你的小伙伴合作在上面开发。
 */
 
-27、
+*27、多人协作 如何练剑远程dev分支
+/*确认本地本人的 learngit 中的 dev分支 推送到远程了,如果没有
+
+	git push origin dev
+
+    在小伙伴的目录下
+
+	git pull 
+	git checkout -b dev origin/dev
+*/
+
+*28、 git tag v0.1 6224937 *给某次commit打标签
+
+*29、 git show v0.1 *查看标签信息
+
+*30、 git tag -a v0.1 -m "version 0.1“ released" 6224937 *创建带有说明的标签
+
+*31、 git tag -d v0.1 *删除标签
+
+*32、 git push origin --tags *推送标签
+
+*34、 git tag - d v0.1*先删除本地标签    git push origin :refs/tags/v0.1 *删除远程标签
