@@ -41,3 +41,44 @@
 *场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。
 
 *场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考版本回退一节，不过前提是没有推送到远程库
+
+*12、git rm readme.txt * 删除暂存区的文件 
+
+*13、 rm readme.txt *删除工作空间的文件
+
+*14、 git remote add origin git仓库网址 *连接本地仓库与远程仓库
+
+*15、 git push -u origin master *把本地库的内容推送到远程 -u只需要第一次推送时添加
+
+*16、 git clone git仓库网址 *克隆远程仓库
+
+*17、 git checkout -b dev *创建并切换到一个dev分支
+
+*18、 git branch dev *创建一个dev分支
+
+*19、 git branch *查看分支
+
+*20、 git merge dev *将当前分支和dev分支合并
+
+*21、 git branch -d dev *删除dev分支
+
+*22、 git merge -no-ff dev *无Fast forward 模式下的合并
+
+*23、 git stash *将工作现场储存下来
+
+*24、 git stash pop *恢复现场，同时把stash内容删除
+
+*25、 git remote -v *查看远程库信息
+
+*26、 git push origin dev *推送dev分支
+/*
+    master分支是主分支，因此要时刻与远程同步；
+
+    dev分支是开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步；
+
+    bug分支只用于在本地修复bug，就没必要推到远程了，除非老板要看看你每周到底修复了几个bug；
+
+    feature分支是否推到远程，取决于你是否和你的小伙伴合作在上面开发。
+*/
+
+27、
